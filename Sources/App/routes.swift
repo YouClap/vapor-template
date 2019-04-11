@@ -15,7 +15,7 @@ public func routes(_ router: Router) throws {
 //    let bearer = router.grouped(User.tokenAuthMiddleware())
 
     let helloController = HelloController()
-    router.get("/", use: helloController.hello)
+    helloController.setupRoutes(with: router)
 
 //    let todoController = TodoController()
 //    bearer.get("todos", use: todoController.index)

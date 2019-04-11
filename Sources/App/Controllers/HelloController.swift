@@ -1,6 +1,10 @@
 import Vapor
 
-final class HelloController {
+final class HelloController: RouterController {
+
+    func setupRoutes(with router: Router) {
+        router.get("/", use: hello)
+    }
 //    /// Returns a list of all todos for the auth'd user.
 //    func index(_ req: Request) throws -> Future<[Todo]> {
 //        // fetch auth'd user
