@@ -38,7 +38,6 @@ extension UserToken {
 }
 
 extension UserToken: SQLiteModel {
-    
 }
 
 //extension UserToken: Model {
@@ -59,12 +58,12 @@ extension UserToken: SQLiteModel {
 extension UserToken: Token {
     /// See `Token`.
     typealias UserType = User
-    
+
     /// See `Token`.
     static var tokenKey: WritableKeyPath<UserToken, String> {
         return \.string
     }
-    
+
     /// See `Token`.
     static var userIDKey: WritableKeyPath<UserToken, User.ID> {
         return \.userID

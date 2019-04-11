@@ -1,6 +1,6 @@
 import Crypto
-import Vapor
 import FluentSQLite
+import Vapor
 
 /// Creates new users and logs them in.
 final class UserController {
@@ -8,14 +8,14 @@ final class UserController {
     func login(_ req: Request) throws -> Future<UserToken> {
         // get user auth'd by basic auth middleware
         let user = try req.requireAuthenticated(User.self)
-        
+
         // create new token for this user
         let token = try UserToken.create(userID: user.requireID())
-        
+
         // save and return token
         return token.save(on: req)
     }
-    
+
     /// Creates a new user.
     func create(_ req: Request) throws -> Future<UserResponse> {
         // decode request content
@@ -24,7 +24,7 @@ final class UserController {
             guard user.password == user.verifyPassword else {
                 throw Abort(.badRequest, reason: "Password and verification must match.")
             }
-            
+
             // hash user's password using BCrypt
             let hash = try BCrypt.hash(user.password)
             // save new user
@@ -43,13 +43,13 @@ final class UserController {
 struct CreateUserRequest: Content {
     /// User's full name.
     var name: String
-    
+
     /// User's email address.
     var email: String
-    
+
     /// User's desired password.
     var password: String
-    
+
     /// User's password repeated to ensure they typed it correctly.
     var verifyPassword: String
 }
@@ -59,10 +59,10 @@ struct UserResponse: Content {
     /// User's unique identifier.
     /// Not optional since we only return users that exist in the DB.
     var id: Int
-    
+
     /// User's full name.
     var name: String
-    
+
     /// User's email address.
     var email: String
 }

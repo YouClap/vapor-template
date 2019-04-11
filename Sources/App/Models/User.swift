@@ -7,16 +7,16 @@ final class User: SQLiteModel {
     /// User's unique identifier.
     /// Can be `nil` if the user has not been saved yet.
     var id: Int?
-    
+
     /// User's full name.
     var name: String
-    
+
     /// User's email address.
     var email: String
-    
+
     /// BCrypt hash of the user's password.
     var passwordHash: String
-    
+
     /// Creates a new `User`.
     init(id: Int? = nil, name: String, email: String, passwordHash: String) {
         self.id = id
@@ -32,7 +32,7 @@ extension User: PasswordAuthenticatable {
     static var usernameKey: WritableKeyPath<User, String> {
         return \.email
     }
-    
+
     /// See `PasswordAuthenticatable`.
     static var passwordKey: WritableKeyPath<User, String> {
         return \.passwordHash
