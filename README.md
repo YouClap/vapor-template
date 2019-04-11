@@ -10,7 +10,7 @@ You must have vapor toolbox installed to use this template, at least it helps.
 
 [Vapor docs](https://docs.vapor.codes/3.0/install/macos/)
 
-Basically, if you have Xcode installed, or swift setted up on your machine, run:
+Assuming you have Xcode installed, or swift setted up on your machine, run:
 
 ```
 brew tap vapor/tap
@@ -18,6 +18,18 @@ brew install vapor/tap/vapor
 ```
 
 ### For Ubuntu
+
+[Vapor docs](https://docs.vapor.codes/3.0/install/ubuntu/)
+
+Assuming you have swift installed and configured on your machine, follow the following steps to install vapor
+
+Add APT repo
+
+`eval "$(curl -sL https://apt.vapor.sh)"`
+
+Install vapor
+
+`sudo apt-get install swift vapor`
 
 ## Using this template
 
