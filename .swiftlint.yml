@@ -5,6 +5,7 @@ disabled_rules:
     - type_name
     - identifier_name
 opt_in_rules:
+    - closure_body_length
     - closure_spacing
     - closure_end_indentation
     - collection_alignment
@@ -14,7 +15,6 @@ opt_in_rules:
     - empty_string
     - fallthrough
     - fatal_error_message
-    - file_types_order
     - first_where
     - force_unwrapping
     - identical_operands
@@ -28,6 +28,7 @@ opt_in_rules:
     - multiline_literal_brackets
     - multiline_parameters
     - nslocalizedstring_key
+    - number_separator
     - weak_delegate
     - nimble_operator
     - object_literal
@@ -42,7 +43,6 @@ opt_in_rules:
     - sorted_imports
     - toggle_bool
     - trailing_closure
-    - type_contents_order
     - unavailable_function
     - unneeded_parentheses_in_closure_argument
     - unused_import
@@ -81,7 +81,7 @@ number_separator:
   minimum_length: 0
 
 implicitly_unwrapped_optional:
-  mode: allExceptIBOutlets
+  mode: all_except_iboutlets
 
 function_parameter_count:
   warning: 8
