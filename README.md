@@ -37,6 +37,14 @@ Vapor toolbox allows to start a new project by cloning a template
 
 `vapor new <service name> --template=youclap/vapor-template`
 
+Configuring the repository to use versioned hooks
+
+`git config --local include.path ../.gitconfig`
+
+### The Structure
+
+On going... 🚧
+
 # About
 
 With ❤️ from [YouClap](https://youclap.tech) [Development team](mailto://development@youclap.tech)
