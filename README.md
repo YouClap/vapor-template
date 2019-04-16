@@ -43,6 +43,12 @@ Vapor toolbox allows to start a new project by cloning a template
 
 `vapor new <service name> --template=youclap/vapor-template`
 
+To open the project in xcode, you have to generate a project
+
+`vapor xcode`
+
+which basicaly calls `swift package generate-xcodeproj`
+
 Configuring the repository to use versioned hooks
 
 `git config --local include.path ../.gitconfig`
