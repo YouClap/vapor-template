@@ -45,15 +45,29 @@ Vapor toolbox allows to start a new project by cloning a template
 
 To open the project in xcode, you have to generate a project
 
-`vapor xcode`
-
-which basicaly calls `swift package generate-xcodeproj`
+`vapor xcode` which is the same as `swift package generate-xcodeproj`
 
 Configuring the repository to use versioned hooks
 
 `git config --local include.path ../.gitconfig`
 
+* **pre-commit** hook - Runs swiftlint in all the project files
+
 ### The Structure
+
+🚧 Insert an image with architecture here 🚧
+
+#### Controllers
+
+The controllers should be specific to the kind of communication we want to support, for example if it is **HTTP** we should have a `HTTPController`, if it is RPC we should have a `RPCController` and so on...
+
+The controller should be responsible to configure the routes, deal with packages, requests, responses, status codes, errors and other things related with the protocol.
+Everything else that isn't related with the protocol, should be handled in the specific layer.
+
+The controller should conform with the protocol `RouterController` and implement the method `func boot(router: Router) throws` where all the routes are configured.
+
+It should have his own set of errors, it should never expose the other layers errors through the response.
+It should conform with the protocol `Debuggable` and implement the properties `identifier` and `reason`.
 
 On going... 🚧
 
