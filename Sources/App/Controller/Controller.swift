@@ -1,4 +1,5 @@
 import Vapor
+import YouClap
 
 protocol Controller {}
 
