@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/vapor/core.git",
         "state": {
           "branch": null,
-          "revision": "c64f63cb21631010952f7abfef719d376ab6a441",
-          "version": "3.9.1"
+          "revision": "18f2436bf7a6bc2224372c0885db2e0159af1649",
+          "version": "3.9.2"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/vapor/fluent.git",
         "state": {
           "branch": null,
-          "revision": "b915c321c6f9e83743ee5efa35a30895e1b02e51",
-          "version": "3.2.0"
+          "revision": "783819d8838d15e1a05b459aa0fd1bde1e37ac26",
+          "version": "3.2.1"
         }
       },
       {
@@ -51,8 +51,26 @@
         "repositoryURL": "https://github.com/vapor/fluent-mysql.git",
         "state": {
           "branch": null,
-          "revision": "2e2f6ea6a97d0b352cf55e6ec289dc1276a6b31a",
-          "version": "3.0.1"
+          "revision": "b7b579307e32b479555e05be2ca8c3b3b7c4151a",
+          "version": "3.1.0"
+        }
+      },
+      {
+        "package": "GoogleCloudKit",
+        "repositoryURL": "https://github.com/YouClap/GoogleCloudKit.git",
+        "state": {
+          "branch": null,
+          "revision": "4103a37b8e5a0cdf7d91b6eb78a2e6311903e8c4",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "GoogleCloudPubSubKit",
+        "repositoryURL": "https://github.com/YouClap/GoogleCloudPubSubKit.git",
+        "state": {
+          "branch": null,
+          "revision": "246d22dd3cac160def813f66955cd7a64d2f6fc7",
+          "version": "0.2.1"
         }
       },
       {
@@ -65,12 +83,21 @@
         }
       },
       {
+        "package": "JWT",
+        "repositoryURL": "https://github.com/vapor/jwt-kit.git",
+        "state": {
+          "branch": null,
+          "revision": "4265f12b3f2585b8f5792ba6078c2cda0e4043a1",
+          "version": "3.1.1"
+        }
+      },
+      {
         "package": "Multipart",
         "repositoryURL": "https://github.com/vapor/multipart.git",
         "state": {
           "branch": null,
-          "revision": "f919a01c4d10a281d6236a21b0b1d1759a72b8eb",
-          "version": "3.0.4"
+          "revision": "f063180d0b84832accd33194e06ed3c41f8609ac",
+          "version": "3.1.1"
         }
       },
       {
@@ -78,35 +105,8 @@
         "repositoryURL": "https://github.com/vapor/mysql.git",
         "state": {
           "branch": null,
-          "revision": "03f97974235bdc7259fc013e0feb963fd322372e",
-          "version": "3.2.5"
-        }
-      },
-      {
-        "package": "Nimble",
-        "repositoryURL": "https://github.com/Quick/Nimble.git",
-        "state": {
-          "branch": null,
-          "revision": "f8657642dfdec9973efc79cc68bcef43a653a2bc",
-          "version": "8.0.2"
-        }
-      },
-      {
-        "package": "Quick",
-        "repositoryURL": "https://github.com/Quick/Quick.git",
-        "state": {
-          "branch": null,
-          "revision": "94df9b449508344667e5afc7e80f8bcbff1e4c37",
-          "version": "2.1.0"
-        }
-      },
-      {
-        "package": "ReactiveSwift",
-        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "b772fa0b624926e6e2f21acbb79297736a05c585",
-          "version": "6.1.0"
+          "revision": "8f2238dc48fa480ce6043ee0022ebe73c8ddc300",
+          "version": "3.3.0"
         }
       },
       {
@@ -114,8 +114,8 @@
         "repositoryURL": "https://github.com/vapor/routing.git",
         "state": {
           "branch": null,
-          "revision": "626190ddd2bd9f967743b60ba6adaf90bbd2651c",
-          "version": "3.0.2"
+          "revision": "d76f339c9716785e5079af9d7075d28ff7da3d92",
+          "version": "3.1.0"
         }
       },
       {
@@ -204,8 +204,17 @@
         "repositoryURL": "https://github.com/vapor/vapor.git",
         "state": {
           "branch": null,
-          "revision": "c86ada59b31c69f08a6abd4f776537cba48d5df6",
-          "version": "3.3.0"
+          "revision": "92a58a9a84e4330500b99fe355a94d29f67abe58",
+          "version": "3.3.1"
+        }
+      },
+      {
+        "package": "YouClap",
+        "repositoryURL": "https://github.com/youclap/vapor-shared.git",
+        "state": {
+          "branch": null,
+          "revision": "7fca92cb0f4fdeddc4d0f828e173ec81986381ee",
+          "version": "0.4.2"
         }
       },
       {

@@ -1,7 +1,7 @@
 import Vapor
 
 /// Called before your application initializes.
-public func configure(_ env: inout Environment) throws -> (Config, Services) {
+public func configure(_ env: Environment) throws -> (Config, Services) {
     let config = Config.default()
     var services = Services.default()
 
